@@ -1,0 +1,212 @@
+
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    height: 100%;
+    min-width: 400px;
+}
+body , input, button{
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #202124;
+}
+
+
+
+header{
+    height: 40%;
+}
+
+.header__icon{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+.header__icon div{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.header__icon__gmail_image {
+    display: flex;
+    padding: 1rem;
+}
+.header__icon__square_circle{
+    display: flex;
+    padding: 0.5rem;
+    
+}
+.profile__image a img{
+    border-radius: 20px;
+    padding: 0rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    
+}
+.header__icon__square{
+    font-size: 20px;
+}
+
+
+.secondDiv{
+    text-align: center;
+}
+
+.secondDiv img{
+    max-width: 100%;
+    max-height: 11.8rem;
+    object-fit:cover;
+
+ }
+
+
+
+
+
+
+
+
+.midContent{
+    text-align: center;
+    height: 35%;
+}
+
+#input_container{
+    position: relative;
+    border: 2px dotted;
+    width: 36rem;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid gray;
+    border-radius: 15px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+#input_container input{
+    padding: 1rem;
+    width: 28rem;
+    border: none;
+    border-radius: 15px; 
+    outline: none;
+    margin-left: 1rem;
+} 
+#input_container_searchIcon{
+    position: absolute;
+    margin-top: 1rem;
+}
+#input_container_micIcon{
+    color: blue;
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+   
+}
+
+.midContent__btn button{
+    padding: 0.5rem  1rem;
+    margin: 1.2rem 0.5rem 1.5rem 0.5rem;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+     background-color: #f2f2f2;
+}
+
+.up_base div{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+
+.base{
+    display: flex;
+    justify-content: space-between;
+}
+
+.base__first{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    padding-top:2rem ;
+    gap: 2rem;
+}
+.base__first a{
+    color: black;
+}
+.base__second{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem;
+     gap: 2rem;
+}
+.base__second a{
+    color : black
+}
+
+
+
+@media screen and (max-width: 720px) {
+    .header__icon{
+        justify-content: center;
+    }
+    #input_container{
+        width: 26rem;
+    }
+    #input_container input{
+        width: 18rem;
+    }
+    .base{
+        flex-direction: column;
+    }
+}
+
+
+
+@media screen and (max-width : 480px) {
+    .header__icon{
+        /* justify-content: center; */
+    }
+    
+    #input_container{
+        width: 18rem;
+    }
+    #input_container input{
+        width: 12rem;
+    }
+
+    .base{
+        flex-direction: row;
+    }
+    .base__first{
+        flex-direction: column;
+    }
+    .base__second{
+        flex-direction: column;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+a:hover {
+      text-decoration: underline;
+    }
